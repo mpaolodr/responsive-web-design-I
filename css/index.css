@@ -370,13 +370,16 @@ footer p {
     align-items: center;
   }
 
+  nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
   nav a {
     font-size: 0.7rem;
     width: 100%;
     text-align: center;
-    /* border-bottom: 1px solid gray; */
-    border-top: 1px solid gray;
-    padding: 3% 0 0 0;
+    border-bottom: 1px solid gray;
+    padding: 3%;
   }
 
   .logo-container {
