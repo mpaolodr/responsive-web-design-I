@@ -1,3 +1,632 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* line 307 to line 315 takes care of the margins*/
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-container {
+  width: 80%;
+}
+
+/*Header Styles*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 0 7%;
+}
+
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 1.25rem;
+  font-family: "Titillium Web";
+  text-decoration: none;
+  color: #b0b0b0;
+}
+
+.logo-container {
+  width: 20%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.divider {
+  border: 2px solid black;
+  margin: 4% 0;
+}
+
+/*Hero Area styles*/
+
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.title,
+.hero-image {
+  display: flex;
+  width: 48%;
+}
+
+.title {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: Bangers;
+  font-size: 6rem;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.title button {
+  background: #fff;
+  border: 1px solid black;
+  width: 30%;
+  padding: 1%;
+}
+
+.hero-image {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 90%;
+}
+
+/* details styles begins here*/
+.top-section,
+.bottom-section {
+  display: flex;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.top-section {
+  margin-bottom: 4%;
+  justify-content: space-between;
+}
+
+.top-section div {
+  width: 45%;
+}
+
+.details-image img {
+  width: 100%;
+}
+
+.bottom-section {
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.bottom-section div {
+  width: 30%;
+}
+/*contact-section styles*/
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+/*footer styles*/
+footer {
+  margin: 4% 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  width: 25%;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/*Services page styles*/
+
+/*service hero area styles*/
+
+.service-hero-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-hero-area figure img {
+  width: 100%;
+}
+.services {
+  margin-top: 3%;
+}
+.services h1 {
+  font-size: 2rem;
+}
+
+.services p {
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/*specialties styles here*/
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.specialties div {
+  border: 3px solid black;
+  width: 48%;
+  margin-bottom: 5%;
+  padding: 2%;
+  font-size: 1.1rem;
+}
+
+.specialties div p {
+  margin-bottom: 3%;
+  letter-spacing: 1px;
+}
+
+.specialties button {
+  padding: 1.5%;
+  border-radius: 5px;
+  width: 30%;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/*facts-section styles here*/
+.facts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.facts div,
+.facts figure {
+  width: 48%;
+}
+
+.facts h2 {
+  font-size: 1.1rem;
+}
+
+.facts p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.facts div ul {
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.facts div ul li {
+  margin-bottom: 4%;
+}
+
+.facts figure img {
+  width: 100%;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 800px) {
+  /*GENERAL STYLES*/
+  .main-container {
+    width: 90%;
+  }
+
+  /*HEADER STYLES*/
+
+  header {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 3%;
+    justify-content: space-around;
+    margin: 2% 0;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  /*HERO AREA STYLES*/
+
+  .hero-area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+    margin-bottom: 10%;
+  }
+
+  .title button {
+    width: 40%;
+    font-size: 0.65rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  /*DETAILS SECTION STYLES*/
+  .top-section,
+  .bottom-section {
+    font-size: 0.75rem;
+  }
+
+  /*CONTACT-SECTION STYLES*/
+  .contact-section {
+    font-size: 0.75rem;
+  }
+
+  /*FOOTER STYLES*/
+  footer p {
+    font-size: 0.5rem;
+  }
+
+  /*SERVICES PAGE STYLES*/
+
+  /* service-hero-area styles */
+
+  .services h1 {
+    font-size: 1.3rem;
+  }
+
+  .services p {
+    font-size: 0.9rem;
+  }
+
+  /* specialties section styles */
+
+  .specialties h2 {
+    font-size: 0.8rem;
+  }
+
+  .specialties p {
+    font-size: 0.5rem;
+  }
+
+  .specialties button {
+    font-size: 0.4rem;
+  }
+
+  /*facts section styles*/
+
+  .facts figure img {
+    height: 100%;
+  }
+
+  .facts h2,
+  .facts p,
+  .facts div ul li {
+    margin-bottom: 3%;
+  }
+  .facts h2 {
+    font-size: 1rem;
+  }
+
+  .facts p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .facts div ul {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 3%;
+  }
+
+  .logo-container {
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+  /*HERO AREA STYLES*/
+  .title {
+    width: 70%;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title button {
+    width: 40%;
+    padding: 2%;
+    font-size: 0.5rem;
+  }
+
+  /*DETAILS SECTION STYLES*/
+  .top-section,
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+
+  .top-section div,
+  .bottom-section div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  /*CONTACT-SECTION STYLES*/
+  .contact-section {
+    font-size: 0.7rem;
+  }
+
+  /*FOOTER STYLES*/
+  footer p {
+    width: 100%;
+  }
+
+  /*SERVICES PAGE STYLES*/
+
+  /* SERVICE-HERO-AREA STYLES */
+
+  .services h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .services p {
+    font-size: 0.7rem;
+  }
+
+  /* SPECIALTIES SECTION STYLES */
+
+  .specialties {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .specialties div {
+    width: 100%;
+  }
+
+  .specialties h2 {
+    font-size: 0.6rem;
+  }
+
+  .specialties p {
+    font-size: 0.5rem;
+  }
+
+  .specialties button {
+    width: 20%;
+  }
+
+  /*FACTS SECTION*/
+  .facts {
+    flex-direction: column;
+  }
+
+  .facts div,
+  .facts ul,
+  .facts figure {
+    width: 100%;
+  }
+
+  .facts div h2 {
+    text-align: center;
+  }
+}
